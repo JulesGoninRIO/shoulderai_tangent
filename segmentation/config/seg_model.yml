@@ -1,0 +1,16 @@
+# Segmentation architecture arguments
+max_epochs: 500
+model_name: 'unet'
+encoder_name: 'efficientnet-b7'
+encoder_depth: 5
+batch_size: 3
+encoder_weights: 'imagenet'
+in_channels: 1 # model input channels (1 for gray-scale images, 3 for RGB, etc.)
+num_classes: 1 # only one class labeled as 1, the rest is 0 (background)
+criterion: 'dice'
+optimizer_name: 'adam'
+threshold_pred: 0.5
+weight_decay: null
+log_every_n_steps: 5
+# just_test: True # no training 
+test_results_folder: "results/"

@@ -1,0 +1,21 @@
+
+datamodule_args:
+  plane: 'sagittal'
+  img_type: 'T1_sag'
+  mask: 'tangent_sign'
+  batch_size: 3
+  num_workers: 7
+  val_perc: 0.2
+  k_folds: 10
+hyperpara_args:
+  lr: 2.3017548661431067e-05
+  beta1: 0.9144117138978288
+  beta2: 0.9117392715150089
+#tangent signe old data
+#lr : 0.0004495194138846156
+#beta1 : 0.8950273293039976
+#beta2 : 0.9974019218599625
+wandb_args:
+  name: 'seg_tangent_sign'
+  version: '_test'
+  project: 'shoulderai'
