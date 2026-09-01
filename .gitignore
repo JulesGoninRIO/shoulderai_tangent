@@ -1,0 +1,14 @@
+__pycache__/
+
+
+data/*
+
+keypoints/model_yolo*.pt
+keypoints/models_5fold/
+keypoints/yamls_5fold/
+keypoints/evaluation/
+
+# Segmentation outputs
+segmentation/check/
+segmentation/wandb/
+segmentation/*_results/
